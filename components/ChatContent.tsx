@@ -48,7 +48,7 @@ const ChatContent: React.FC<ChatContentProps> = ({ docIds }) => {
             userId: session?.user?.uid,
             username: session?.user?.name,
             message: message,
-            profileImage: session?.user?.image,
+            profileImage: session?.user?.image ?? "",
             company: session?.user?.email,
             timestamp: serverTimestamp() as Timestamp,
           }

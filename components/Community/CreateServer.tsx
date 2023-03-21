@@ -57,7 +57,7 @@ const CreateServer: React.FC<CreateServerProps> = () => {
           userId: session?.user?.uid,
           username: session?.user?.name,
           serverName: serverName,
-          profileImage: session?.user?.image,
+          profileImage: session?.user?.image ?? "",
           company: session?.user?.email,
           serverCountry: serverCountry,
           serverType: serverType,
